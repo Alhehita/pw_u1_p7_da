@@ -32,4 +32,49 @@ button {
     border-radius: 8px;
 }
 
+.titulos {
+    color: #bc4749;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+
+}
+
+#id_pie_pagina {
+    background: #f7ede2;
+    height: 20px;
+    padding: 10px;
+    font-family: sans-serif;
+}
+
+img[src]{
+    margin-top: 10px; 
+    height: 200px;
+    width: 300px;
+    border: 2px solid black;
+    padding: 2px;
+    border-radius: 10px;
+}
+
+img[alt]{
+    font-size: 30px;
+    font-family: serif;
+    color: fuchsia;
+}
+
+input[type="text"]{
+    color: #780000;
+    background-color: #f5cac3;
+    border: solid #f28482;
+    border-radius: 5px;
+}
+
+button:hover{
+ color: #ccff00;
+ background-color: #ff006e;
+}
+
+.titulos:hover{
+    border: 2px solid #ccff00;
+    border-radius: 10px;
+}
 /*comentario en CSS*/
