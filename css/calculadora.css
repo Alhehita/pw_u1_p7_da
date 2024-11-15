@@ -1,0 +1,28 @@
+*{
+    background-color: #be95c4 ;
+    align-content: center;
+    align-items: center;
+}
+
+
+
+li{
+    font-size: 15px;
+    color: #540b0e;
+    
+}
+
+ul, input{
+    border: 2px solid #540b0e;
+    border-radius: 5px;
+}
+
+
+input{
+    background-color: #dde5b6;
+}
+button{
+    padding: 5px;
+    background-color: #fcbf49 ;
+    border-radius: 4px;
+}

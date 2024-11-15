@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+
+    <script src="../js/jsdeber.js">
+       
+    </script>
+
+<link rel="stylesheet" href="../css/calculadora.css">
+
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <nav>
+        <ul id="idmenu">
+            <li>Calculadora 1</li>
+            <li>Calculadora 2</li>
+            <li>Calculadora 3</li>
+
+        </ul>
+    </nav>
+    <section>
+        <label id="tit1" for="num1">N&#250;mero 1</label>
+        <input id="num1" type="number">
+
+        <label id="tit2" for="num2">N&#250;mero 2</label>
+        <input id="num2" type="number">
+
+        <br>
+        <br>
+
+      
+        <button onclick="cambiarColor('tit1','#bc4749' )">Cambiar color</button>
+        <br>
+        <br>
+        <button onclick="cambiarTamanio('tit2', '30px')">Cambiar tama&#241;o</button>
+        <br>
+        <br>
+        <button onclick="cambiarTexto('tit1','Nuevo Valor 1')">Cambiar texto 1</button>
+
+        <br>
+        <br>
+        <button onclick="cambiarTexto('tit2','Nuevo Valor 2')">Cambiar texto 2</button>
+
+        <br>
+        <br>
+        <button onclick="agregarElemento('idmenu', '<li>Calculadora 4</li>')">Agregar Elemento</button>
+    </section>
+    <footer></footer>
+</body>
+
+</html>
+
