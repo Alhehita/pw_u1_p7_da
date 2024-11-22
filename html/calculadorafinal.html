@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/estilos.css">
+    <script src="../js/calculadora.js"></script>
 </head>
 
 <body>
@@ -17,27 +18,27 @@
 
             <div class="calculadora">
 
-                <div class="display">
-                    1+2
+                <div  id="id-display" class="display">
+                    
                 </div>
                 <button id="borrar">C</button>
-                <button >&larr;</button>
-                <button>/</button>
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
-                <button>x</button>
-                <button>4</button>
-                <button id="num5">5</button>
-                <button>6</button>
-                <button>-</button>
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button>+</button>
+                <button id="borrarTodo" >&larr;</button>
+                <button id="div">/</button>
+                <button onclick="escribirPantalla(7)" id="siete">7</button>
+                <button onclick="escribirPantalla(8)" id="ocho">8</button>
+                <button onclick="escribirPantalla(9)" id="nueve">9</button>
+                <button  id="multiplicacion">x</button>
+                <button onclick="escribirPantalla(4)" id="cuatro">4</button>
+                <button onclick="escribirPantalla(5)" id="num5">5</button>
+                <button onclick="escribirPantalla(6)" id="seis">6</button>
+                <button id="menos">-</button>
+                <button id="uno">1</button>
+                <button id="dos">2</button>
+                <button id="tres">3</button>
+                <button id="mas">+</button>
                 <button id="cero">0</button>
-                <button>.</button>
-                <button>=</button>
+                <button id="punto">.</button>
+                <button id="igual">=</button>
 
             </div>
 
