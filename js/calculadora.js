@@ -1,58 +1,61 @@
-var pantalla = document.getElementById('id-display');
+// Variables globales
+const pantalla = document.getElementById('id-display');
 
-var num1 = '';
-var num2 = '';
-var op = '';
-var res = '';
-var nuevo = false;
-
-
-const setearValor = (valor)=>{
-   let valoractual =  pantalla.innerText;
-    console.log(valoractual);
-    pantalla.innerText = valor; 
-
-};
+let num1 = ''; 
+let num2 = ''; 
+let operacionActual = ''; 
+let nuevo = false;
 
 
-const setearValorConcatenado = (valor)=>{
-    let valoractual =  pantalla.innerText;
-     console.log(valoractual);
-     pantalla.innerText;
-     t = valoractual + valor; 
- 
- };
+function escribirPantalla(numero) {
+    if (pantalla.innerText === 'Error') borrar(); 
+    if (nuevo) {
+        pantalla.innerText = ''; 
+        nuevo = false;
+    }
 
- const escribirPantalla=(numero)=>{
-    if(num1===null){
-        num1 = numero;
-        console.log(num1);
+    if (numero === '.' && pantalla.innerText.includes('.')) return; // Prevenir múltiples puntos decimales
 
+    pantalla.innerText = pantalla.innerText === '0' ? numero : pantalla.innerText + numero;
+    operacionActual += numero; 
+}
+
+
+function setOperacion(op) {
+    const ultimoChar = pantalla.innerText.slice(-1);
+
+    if (['+', '-', '*', '/'].includes(ultimoChar)) {
+
+        pantalla.innerText = pantalla.innerText.slice(0, -1) + op;
+        operacionActual = operacionActual.slice(0, -1) + op;
     } else {
-        num2 = numero;
-        console.log(num2);
+        pantalla.innerText += op;
+        operacionActual += op;
     }
+}
 
- };
 
+function calcular() {
+    if (operacionActual) {
+       
+        let resultado = eval(operacionActual);
 
- const operacion = (op)=>{
-    operacion = op
- }
-
- const calcular = ()=>{
-    let valFinal;
-    if(operacion === '+'){
-        valFinal = num1 + num2;
-    } else if(operacion === '-'){
-        valFinal = num1 - num2;
-
-    }else if(operacion === '/'){
-        valFinal = num1 / num2;
-
-    }else if(operacion === '*'){
-        valFinal = num1 * num2;
-
+        pantalla.innerText = resultado;
+        operacionActual = resultado.toString(); 
+        num1 = resultado; 
+        nuevo = true;
     }
+}
 
- }
+
+function borrar() {
+    pantalla.innerText = '0';
+    resetear();
+}
+
+function resetear() {
+    num1 = '';
+    num2 = '';
+    operacionActual = '';
+    nuevo = false;
+}
