@@ -1,0 +1,47 @@
+p::before {
+    content: attr(type);
+    display: block;
+    margin: 3px;
+    font-size: 17px;
+    color: #9d8189;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background: #edede9;
+}
+
+input{
+    width: 200px;
+    border: none;
+    border-bottom: 2px solid #d6ccc2;
+    background: none;
+}
+
+input:focus{
+    outline: none;
+    border-bottom: 2px solid #c9ada7;
+
+}
+
+h2{
+    margin: 10px 2px;
+    width: 180px;
+    color: #7f5539;
+    border-bottom: 3px solid #7f5539;
+}
+
+form{
+    margin-top: 15px;
+    width: 300px;
+    background-color: #e1ddd3;
+    padding: 15px 13px;
+    border-radius: 10px;
+    box-shadow: 15px 10px 10px 10px #cabbb7;
+}
+
