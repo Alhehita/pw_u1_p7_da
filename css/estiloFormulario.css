@@ -9,7 +9,7 @@ p::before {
 .container {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center
 }
 
 body {
@@ -45,3 +45,21 @@ form{
     box-shadow: 15px 10px 10px 10px #cabbb7;
 }
 
+button{
+    background-color: #d5bdaf;
+    border: 2px solid #d4a373;
+    border-radius: 8px;
+    width: 90px;
+    height: 35px;
+    font-size: 16px;
+    color: #7f5539;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+    font-weight: 600;
+    font-style: oblique;
+}
+
+.boton{
+    display: flex;
+    justify-content: center;
+}

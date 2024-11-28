@@ -4,57 +4,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+    <script defer src="./js/calculadora.js"></script>
 </head>
 
 <body>
-    <header>
-        <h1>Mi Blog</h1>
-        <h6>Mi Blog 2</h6>
-    </header>
-    <nav>
-        <ul>
-            <li>Principal</li>
-            <li>Docentes</li>
-            <li>Estudiantes</li>
-            <li>Administrativo</li>
-            <li>Ayuda</li>
-        </ul>
-    </nav>
-    <section>
-        <article>
-            <time datetime="06-11-2024">Publicado el 06-11-2024</time>
-            <h2>Articulo de Ciencias</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea magni debitis fuga nam adipisci quam
-                molestias tempore laboriosam deserunt alias quae ipsa et accusantium sit officia, quos, exercitationem
-                nihil excepturi.
-            </p>
-            <footer>
-                Comentarios (10)
-            </footer>
-        </article>
-        <article>
-            <time datetime="02-11-2024">Publicado el 02-11-2024</time>
-            <h2>Articulo de Computacion</h2>
-            <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo dolorem rerum consectetur tenetur eligendi
-                ipsam a, nisi, velit dolorum culpa pariatur officia facilis exercitationem nulla recusandae! Explicabo
-                laudantium natus, corporis neque atque quis nesciunt mollitia harum. Velit saepe debitis quibusdam?
-            </p>
-            <footer>
-                Comentarios (5)
-            </footer>
-        </article>
-    </section>
-    <aside>
-        <blockquote cite="https://miblog/ciencias">Referencia de articulo de Ciencias</blockquote>
-        <blockquote cite="https://miblog/computacion">Referencia de articulo de Computacion</blockquote>
+    <header></header>
+    <nav></nav>
 
-    </aside>
-    <footer>
-        Todos los derechos reservados para la Universidad Central del Ecuador
-    </footer>
+    <section>
+        <div class="container">
+            <div class="calculadora">
+                <!-- Display -->
+                <div id="id-display" class="display">0</div>
+
+                <!-- Botones funcionales -->
+                <button onclick="borrar()" id="borrar">C</button>
+                <button onclick="borrar()" id="borrarTodo">&larr;</button>
+                <button onclick="setOperacion('/')" id="div">/</button>
+
+                <!-- Botones numéricos y operadores -->
+                <button onclick="escribirPantalla(7)" id="siete">7</button>
+                <button onclick="escribirPantalla(8)" id="ocho">8</button>
+                <button onclick="escribirPantalla(9)" id="nueve">9</button>
+                <button onclick="setOperacion('*')" id="multiplicacion">x</button>
+
+                <button onclick="escribirPantalla(4)" id="cuatro">4</button>
+                <button onclick="escribirPantalla(5)" id="num5">5</button>
+                <button onclick="escribirPantalla(6)" id="seis">6</button>
+                <button onclick="setOperacion('-')" id="menos">-</button>
+
+                <button onclick="escribirPantalla(1)" id="uno">1</button>
+                <button onclick="escribirPantalla(2)" id="dos">2</button>
+                <button onclick="escribirPantalla(3)" id="tres">3</button>
+                <button onclick="setOperacion('+')" id="mas">+</button>
+
+                <button onclick="escribirPantalla(0)" id="cero">0</button>
+                <button onclick="escribirPantalla('.')" id="punto">.</button>
+                <button onclick="calcular()" id="igual">=</button>
+            </div>
+        </div>
+    </section>
+
+    <footer></footer>
 </body>
 
 </html>
